@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -19,9 +20,17 @@ public class MainActivity extends AppCompatActivity {
         tvSelamatDatang = findViewById(R.id.tv_selamat_datang);
         btnPindah = findViewById(R.id.btn_pindah);
 
-        btnPindah.setOnClickListener(view -> {
+        /* btnPindah.setOnClickListener(view -> {
             Intent pindah = new Intent(MainActivity.this, Second.class);
             startActivity(pindah);
+        }); */
+
+        btnPindah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent pindah = new Intent(MainActivity.this, Second.class);
+                startActivity(pindah);
+            }
         });
     }
 }
