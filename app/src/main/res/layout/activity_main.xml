@@ -8,10 +8,11 @@
 
     <EditText
         android:id="@+id/et_nama"
-        android:layout_width="match_parent"
+        android:layout_width="500px"
         android:layout_height="wrap_content"
         android:hint="Nama"
-        android:layout_above="@+id/btn_pindah"/>
+        android:layout_above="@+id/btn_pindah"
+        android:layout_centerHorizontal="true"/>
 
     <Button
         android:id="@+id/btn_pindah"

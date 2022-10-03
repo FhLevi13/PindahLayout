@@ -19,8 +19,8 @@ public class Second extends AppCompatActivity {
 
         tvNama = findViewById(R.id.tv_nama);
 
-        Intent terima = new Intent();
-        String terimaNama = terima.getStringExtra("nama");
+        Intent terima = getIntent();
+        String terimaNama = terima.getStringExtra("inputNama");
 
         tvNama.setText(terimaNama);
     }
