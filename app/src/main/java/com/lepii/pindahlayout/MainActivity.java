@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().setTitle("Home");
+
         tvSelamatDatang = findViewById(R.id.tv_selamat_datang);
         btnPindah = findViewById(R.id.btn_pindah);
 
